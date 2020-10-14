@@ -140,7 +140,7 @@ nav[aria-label="Adjacent Posts"] {
 }
 
 // contact form
-html[data-current="contact"] main > form {
+.contact-form {
   display: grid;
   label {
     display: none;
@@ -158,7 +158,7 @@ html[data-current="contact"] main > form {
 
 // reset CSS Grid fallbacks when they aren't required
 @supports (display: grid) {
-  html[data-current="contact"] main > form {
+  .contact-form {
     input,
     textarea,
     button {

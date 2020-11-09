@@ -35,6 +35,7 @@ header {
   }
 }
 
+
 // logo, is a grid item
 header > h1 {
   display: inline-block;
@@ -53,6 +54,20 @@ header > h1 {
   }
   a:hover {
     color: white;
+  }
+}
+
+// header custom styles to override template
+header {
+  background-color: white;
+  padding: 0;
+  h1 {
+    visibility: hidden;
+    width: 0;
+  }
+  @media screen and (min-width: $screen-sm-min) {
+    grid-template-columns: 1fr 980px 1fr;
+    grid-column-gap: 0;
   }
 }
 

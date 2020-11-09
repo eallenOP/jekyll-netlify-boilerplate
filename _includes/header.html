@@ -1,11 +1,13 @@
 <header>
 
   <h1>
-    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {{ site.title | escape }}
   </h1>
 
-  <nav>
+  {% include logotype.html %}
+
+  <!-- <nav>
     {% include navigation.html navigation=site.data.navigation %}
-  </nav>
+  </nav> -->
 
 </header>

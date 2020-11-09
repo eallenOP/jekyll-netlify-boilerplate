@@ -61,9 +61,10 @@ header > h1 {
 header {
   background-color: white;
   padding: 0;
+  grid-template-rows: 180px auto auto;
   .header-container { 
     grid-column: 1 / 4;
-    grid-row: 1;
+    grid-row: 1 / 3;
     background: 
     linear-gradient(180deg, 
       rgba(255,255,255,1) 28.9%, 
@@ -76,12 +77,22 @@ header {
       rgba(255,0,0,1) 61.75%, 
       rgba(109, 109, 109, 0.5) 62.5%, 
       rgba(255,255,255,1) 63.15%, 
-      rgba(255,255,255,1) 100%);
+      rgba(255,255,255,1) 63.15%, 
+      rgba(255,255,255,0) 100%);
   }
   img {
-    background-color: white;
+    background: 
+    linear-gradient(180deg, 
+      rgba(255,255,255,1) 80%, 
+      rgba(255,255,255,0) 80%, 
+      rgba(255,255,255,0) 100%);
     grid-column: 2 / 3;
-    grid-row: 1;
+    grid-row: 1 / 3;
+  }
+  .header-image-container {
+    grid-row: 2 / 4;
+    grid-column: 2 / 3;
+    padding: 0 50px;
   }
   h1 {
     visibility: hidden;
